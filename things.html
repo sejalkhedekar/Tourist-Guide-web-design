@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Things To Do</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  a{
+   color:#2F4F4F;
+   text-decoration:none;
+  }
+  a:hover{
+   color:#2E8B57;
+   text-decoration:none;
+  }
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+  
+    }
+  h1{
+  	font-weight:600;
+        font-size:300%;
+     }
+  	
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align:center;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+   }
+.bottom {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  
+  text-align:center;
+  font-family:arial;
+  font-size:150%;
+  color: #ffffff;
+  transform:translate(-50%, -50%);
+}
+  .container-fluid {
+    text-align:center;
+    padding: 70px 60px;
+    background-color:#708090;
+    color:#708090;
+  }
+  img{
+    width:100%;
+    height:auto; 
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+    text-align:right;
+    left:50%;
+  }
+  
+  
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2E8B57;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #2F4F4F !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2E8B57;
+  }
+.heading{
+position:absolute;
+left:5%;
+font-size:200%;
+color:white
+}
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+	background-color:#2E8B57;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 100px;
+    }
+   .bottom{
+   font-size:10px;
+    position: absolute;
+  top: 60%;
+  left: 40%;
+  text-align:center;
+   
+}
+  }
+#contact {
+  background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("pricepic.jpg");
+  background-size:cover;
+}
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"  style="background-color:#D7DBDD; ">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+     <div class="heading" style="font-family: 'Pacifico';">Hazelworth County</div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES WE PROVIDE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:500px" id="home">
+ <div class="headimage">
+  <img class="w3-image" src="to.jpg" alt="Hamburger Catering" width="1600" height="700">
+</div>
+  <div class="bottom">
+    <h1 style="font-family: 'Pacifico';">Discover Many Adventures We Have To Offer</h1>
+  </div>
+</header>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Ready To Get Away!</h2>
+  <h2>Choose one of these adventures!</h2>
+  <h4 style="text-align:center;">We are not the boastful kind, but when it comes to the size and scale of nature found here, we are in a league of our own. It is little wonder these aromatic forests are compared with royalty: crowns, towers, kings. Our beaches are protected homes to hundreds of species of plants and animals. It is also the terminus for the Juan de Fuca Marine Trail and West Coast Trail. Hours of fun for beachcombers of all ages can be had.</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="beach.jpg" alt="Paris" >
+        <p><strong>LUFFENHOLTZ BEACH</strong></p>
+        <p>Take in a sweeping, panoramic view of the majestic Pacific Ocean. Beautiful and inspiring, a scenic picnic area opens up onto an easy trail right down to the beach below. A truly spectacular rocky cove awaits, fe…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="forest.jpg" alt="New York" >
+        <p><strong>ROCKEFELLER FOREST</strong></p>
+        <p>Purchased and preserved in 1931 by John D. Rockefeller Jr. and the Save-the-Redwoods League. The Rockefeller Forest is the largest remaining old-growth coastal redwood forest in the world. The trees towering over…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="town.jpg" alt="San Francisco" >
+        <p><strong>EUREKA’S HISTORIC OLD TOWN</strong></p>
+        <p>Before or after you venture into the redwoods, Old Town Eureka is a must-see.  Restaurants, galleries, theaters, coffee houses, boardwalks and antique shops make up only a portion of everything this cozy quaint V…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+  
+
+
+<!-- Container (Portfolio Section) -->
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="zoo.jpg" alt="Paris" >
+        <p><strong>SEQUOIA ZOO</strong></p>
+        <p>If it's your first time visiting, you would be surprised to find a zoo of such high caliber in a remote coastal destination like Eureka. Clean, well designed, and delightful attractions populate the lush grounds …</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="prak.jpg" alt="New York" >
+        <p><strong>REDWOOD NATIONAL PARK</strong></p>
+        <p>A gorgeous 10-mile scenic drive winds through towering, ancient redwoods that will leave you gasping in awe. Enjoy over 75 miles of hiking, biking, and self-guided nature trails. Ancient and mystical, this is Hum…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="museum.jpg" alt="San Francisco" >
+        <p><strong>FERNDALE MUSEUM</strong></p>
+        <p>An experience you can only get in Ferndale. This is a historical and educational museum that brings the community an appreciation and understanding of the culture and heritage of Ferndale, the Eel River and Matto</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<div class="w3-row">
+<div class="w3-container  w3-center w3-padding-32" style="background-color:#6B8E23;">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="forest.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+     <h1 style="color:white;">Subscribe</h1>
+    <p style="color:white;">To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-green w3-margin-bottom">Subscribe</button>
+      
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid " style="color:white;">
+  <h2 class="text-center" style="color:white;">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center" style="background-color:lightcyan">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+<div class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </div>
+  <p>Enjoy your Adventure.And always....follow the magic!</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
