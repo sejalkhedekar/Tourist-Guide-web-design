@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
   <title>Hazelworth County</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -235,7 +234,7 @@ body {
     color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #2F4F4F !important;
+    color: #fff !important;
     background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -247,6 +246,9 @@ body {
     margin-bottom: 20px;
     color: #2E8B57;
   }
+.collapse navbar-collapse{
+color:#fff;
+}
 #contact {
   background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("pricepic.jpg");
   background-size:cover;
@@ -297,6 +299,9 @@ color:white
     .logo {
       font-size: 150px;
     }
+img#optionalstuff {
+    display: none;
+  }
   }
 
 </style>
@@ -325,10 +330,8 @@ color:white
 </nav>
 
 <div class="cover">
-<video autoplay playsinline autobuffer loop muted webkit-playsinline poster="naturebg.jpg">
+<video autoplay loop muted preload="metadata" poster="naturebg.jpg">
     <source src="https://player.vimeo.com/external/395657672.sd.mp4?s=82b89e372c1eacf3f0a28112e4acbbaded81011f&profile_id=165" type="video/mp4">
-    <source src="https://nerookeh.sirv.com/nature/video2.webm" type="video/webm"/>
-    <source src="https://nerookeh.sirv.com/nature/video2.ogv" type="video/ogg"/>    
     Your browser does not support the video tag.
 </video>
 </div>
@@ -345,9 +348,9 @@ color:white
 <div id="about" class="container-fluid bg-lightcyan">
   <div class="row">
     <div class="col-sm-8"> 
-      <img class="treepic" src="tree.png" alt="logo of website">
-      <h2 >Welcome To Hazelworth County!</h2><br>
-      <h4>We believe in building balance into modern life — taking the time to rest and unplug from the daily hustle and to focus on ourselves, our relationships, and the wonder of nature.This is the magical, mesmerizing, mysterious world of Hazelworth – a land of giants and enchantment. It is a place that becomes curiouser and curiouser with each step you take, and no matter which way you look, you will be greeted with sights most extraordinary.
+      <img class="treepic" id="optionalstuff" src="tree.png" alt="logo of website">
+      <h2 >Why Choose Us?</h2><br>
+      <h4>We believe in building balance into modern life — taking the time to rest and unplug from the daily hustle and to focus on ourselves, our relationships, and the wonder of nature.
 </h4><br>
       <p>Who doesn’t dream of an escape in the great outdoors where time seems to stop? Only an hour and a half from Ottawa and Montreal, Kenauk Nature is one of North America’s largest private reserves. As a couple, family or group, discover our five star service, protected property and luxurious off-grid chalets. Enjoy a memorable experience with year-round outdoor adventures and activities.
 
@@ -480,8 +483,8 @@ color:white
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> India</p>
-      <p><span class="glyphicon glyphicon-phone"></span>  1515151515</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
     <div class="col-sm-7 slideanim">
