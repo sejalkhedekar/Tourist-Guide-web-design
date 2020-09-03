@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+.w3-tangerine {
+  font-family: "Tangerine", serif;
+}
+  a{
+   color:#2F4F4F;
+   text-decoration:none;
+  }
+  a:hover{
+   color:#2E8B57;
+   text-decoration:none;
+  }
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    scroll-behavior: smooth;
+  }
+  .bottomright{
+  	position: absolute;
+  	bottom: 5%;
+  	left:50%;
+  	font-size: 18px;
+	font: 25px/1.3 'Berkshire Swash', Helvetica, sans-serif;;
+    	color: #FBFCFC;
+    
+    }
+  h1{
+  	 font-weight:900;
+     }
+  	
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align:center;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+.content{
+    min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image{
+    color: #ffffff;
+    padding: 20%;
+    font-family: Montserrat, sans-serif;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    z-index:1;
+  }  
+.cover {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+ .cover video {
+   left: auto;
+    min-height: 900px;
+    min-width: 100%;
+    right: auto;
+    position: absolute;
+    top: 0;
+    width: auto;
+    z-index: 1;
+}
+
+@supports (transform: translateX(-50%)) {
+
+    .cover img, .cover video {
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+}
+
+@media screen and (min-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
+
+    .cover img, .cover video {
+        max-width: 100vw;
+        min-width: 100vw;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-aspect-ratio: 16/9){/* Make this the same aspect ratio as your video */
+
+    .cover img, .cover video {
+        height: 100vh;
+        max-height: 100vh;
+        min-height: 100vh;
+    }
+}
+  .container-fluid {
+    text-align:center;
+    padding: 70px 60px;
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+  .treepic{
+    padding: 5px;
+    max-width: 30%;
+    float:right;
+    position:absolute;
+    left: 110%;
+}
+.w3-row-padding img {margin-bottom: 12px}
+  .bg-grey {
+    background-color: #f6f6f6;
+    text-align:right;
+    left:50%;
+  }
+ 
+  .panel {
+    border: 1px solid #2E8B57; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px #2E8B57 ;
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #2E8B57;
+    background-color:#2E8B57!important;
+    color: #ffffff;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #2E8B57 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color:#2E8B57;
+    color:#ffffff;
+
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #2F4F4F;
+    color: #ffffff;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #2E8B57;
+  }
+  .carousel-indicators li {
+    border-color:#2E8B57;
+  }
+  .carousel-indicators li.active {
+    background-color: #2E8B57;
+  }
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2E8B57;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #2F4F4F !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2E8B57;
+  }
+#pricing {
+  background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("pricepic.jpg");
+  background-size:cover;
+}
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+	background-color:#2E8B57;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES WE PROVIDE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="cover">
+<video autoplay loop muted >
+        <source src="video2.mp4" type="video/mp4" />
+    </video>
+</div>
+
+ <div class="content">
+ <div class="hero-image text-center">
+  <h1 style="font-size:500%;  font-family: 'Pacifico';">Hazelworth County</h1><br>
+  <h3 style="font-size:200%;" ><div class="w3-container w3-tangerine w3-jumbo">-Experience the Wilderness!</div></h3>
+  <div class="bottomright">"Come fourth into the light of things,let nature be your teacher"  -Willams Wordsworth</div>
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid bg-lightcyan">
+  <div class="row">
+    <div class="col-sm-8"> 
+      <img class="treepic" src="tree.png" alt="logo of website">
+      <h2>Why Choose Us?</h2><br>
+      <h4>We believe in building balance into modern life — taking the time to rest and unplug from the daily hustle and to focus on ourselves, our relationships, and the wonder of nature.
+</h4><br>
+      <p>Who doesn’t dream of an escape in the great outdoors where time seems to stop? Only an hour and a half from Ottawa and Montreal, Kenauk Nature is one of North America’s largest private reserves. As a couple, family or group, discover our five star service, protected property and luxurious off-grid chalets. Enjoy a memorable experience with year-round outdoor adventures and activities.
+
+</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center" style="background-color:lightcyan;">
+  <h2>Start Planning Your Trip!</h2>
+  <h4>What we offer</h4>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <i class="fa fa-bed" style="font-size:60px;color:#2E8B57;"></i>
+	<h4>step 1</h4>
+      <h4 ><a href ="stay.html">Where To Stay?</a></h4>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa fa-map-signs" style=" font-size:60px;color:#2E8B57;"></i>
+	<h4>step 2</h4>
+      <h4 ><a href ="things.html">Things To Do</a></h4>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa fa-usd" style=" font-size:60px;color:#2E8B57;"></i>
+	<h4>step 3</h4>
+      <h4 ><a href ="price.html">Reserve A Spot</a></h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center ">
+  <h2>STEP 1</h2>
+  <h2>Ready To Get Away!</h2>
+  <h4 style="text-align:center;">Not everyone wants to rough it in the bush — not all of the time, at least. Now you can retreat to a private waterfront cottage as the day wanes. Enjoy all of the creature comforts, without sacrificing your wild side. A stay at the new Wild Renfrew Seaside Cottages is like being nestled in a plush log cabin at the end of the world.</h4>
+  <h2>Choose one of these cabins</h2>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="h1.jpg" alt="Paris" >
+        <p><strong>Holiday Inn Express</strong></p>
+        <p>815 West Wabash Eureka ,5501</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Visit the Site for more Info</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="h2.jpg" alt="New York" >
+        <p><strong>Benbow Inn and Tesort</strong></p>
+        <p>445 Lake Benbow Drive,CA 95542</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Visit the Site for more Info</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="h3.jpg" alt="San Francisco" >
+        <p><strong>Cornelius Daly Inn</strong></p>
+        <p>1125H Street Eureka ,CA 95501</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Visit the Site for more Info</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center"  style="background-color:lightcyan;">
+  <h2>Step 2</h2>
+  <h2>Ready To Get Away!</h2>
+  <h2>Choose one of these adventures!</h2>
+  <h4 style="text-align:center;">We are not the boastful kind, but when it comes to the size and scale of nature found here, we are in a league of our own. It is little wonder these aromatic forests are compared with royalty: crowns, towers, kings. Our beaches are protected homes to hundreds of species of plants and animals. It is also the terminus for the Juan de Fuca Marine Trail and West Coast Trail. Hours of fun for beachcombers of all ages can be had.</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="beach.jpg" alt="Paris" >
+        <p><strong>LUFFENHOLTZ BEACH</strong></p>
+        <p>Take in a sweeping, panoramic view of the majestic Pacific Ocean. Beautiful and inspiring, a scenic picnic area opens up onto an easy trail right down to the beach below. A truly spectacular rocky cove awaits, fe…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="forest.jpg" alt="New York" >
+        <p><strong>ROCKEFELLER FOREST</strong></p>
+        <p>Purchased and preserved in 1931 by John D. Rockefeller Jr. and the Save-the-Redwoods League. The Rockefeller Forest is the largest remaining old-growth coastal redwood forest in the world. The trees towering over…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="town.jpg" alt="San Francisco" >
+        <p><strong>EUREKA’S HISTORIC OLD TOWN</strong></p>
+        <p>Before or after you venture into the redwoods, Old Town Eureka is a must-see.  Restaurants, galleries, theaters, coffee houses, boardwalks and antique shops make up only a portion of everything this cozy quaint V…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- Container (Portfolio Section) -->
+<div  class="container-fluid text-center" style="background-color:lightcyan;">
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="zoo.jpg" alt="Paris" >
+        <p><strong>SEQUOIA ZOO</strong></p>
+        <p>If it's your first time visiting, you would be surprised to find a zoo of such high caliber in a remote coastal destination like Eureka. Clean, well designed, and delightful attractions populate the lush grounds …</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Visit the Site for more Info</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="prak.jpg" alt="New York" >
+        <p><strong>REDWOOD NATIONAL PARK</strong></p>
+        <p>A gorgeous 10-mile scenic drive winds through towering, ancient redwoods that will leave you gasping in awe. Enjoy over 75 miles of hiking, biking, and self-guided nature trails. Ancient and mystical, this is Hum…</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Visit the Site for more Info</a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="museum.jpg" alt="San Francisco" >
+        <p><strong>FERNDALE MUSEUM</strong></p>
+        <p>An experience you can only get in Ferndale. This is a historical and educational museum that brings the community an appreciation and understanding of the culture and heritage of Ferndale, the Eel River and Matto</p>
+	 <a href="#" class="w3-button w3-green" style="text-align:center;">Get Directions</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2  style="color: white;">Step 2</h2>
+    <h2  style="color: white;">Pricing</h2>
+    <h4  style="color: white;">Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Suit</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Queen Size Bedroom</p>
+          <p><strong>1</strong>Walk In Shower</p>
+          <p><strong>Full Breakfast</strong></p>
+          <p><strong>1</strong> Sitting Area</p>
+          <p><strong>Full Breakfast</strong></p>
+        </div>
+        <div class="panel-footer">
+          <h3>$200 Per Night</h3>
+          <button class="btn btn-lg">Book</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Dulex-Suit</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> King Size Bed</p>
+          <p><strong>Microwave</strong></p>
+          <p><strong>1</strong> Family Room</p>
+          <p><strong>Full Breakfast And Dinner</strong> Sit</p>
+          <p><strong>Public Pool</strong></p>
+        </div>
+        <div class="panel-footer">
+          <h3>$350 Per Night</h3>
+          <button class="btn btn-lg">Book</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Luxury-Suit</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> King Size Bed</p>
+          <p><strong>2</strong> Queen Size Bed</p>
+          <p><strong>Microwave And Refrigerator</strong> Dolor</p>
+          <p><strong>2</strong> Sitting Area</p>
+          <p><strong>Private Pool</strong></p>
+        </div>
+        <div class="panel-footer">
+          <h3>$500 Per Night</h3>
+          <button class="btn btn-lg">Book</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+ 
+  <h2>Happy Reviews!</h2>
+  <div id="myCarousel" class="carousel slide text-center " data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-slide-to="0"></li>
+      <li data-slide-to="1"></li>
+      <li data-slide-to="2"></li>
+    </ol>
+<div class="carousel-inner " role="listbox">
+      <div class="item active">
+        <h4>"This place is the best. I am so happy with the result!"<br><span>Michael Roe</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with in this place?"<br><span>Chandler Bing</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+   
+<div class="header" style="background-color:white;">
+  <h1 style="color: #303030;">#WidernessOften</h1>
+  <p style="color: #303030;">Check Out #wildernessoften from those who have gotten away.</p>
+   <h3 style="color: #303030;">Share your photos with us!</h3>
+<!-- Photo Grid -->
+<div class="row" style="background-color:white;"> 
+  <div class="column">
+    <img src="insta1.jpg" alt="insta-post" style="width:100%">
+    <img src="insta2.jpg" alt="insta-post" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="insta3.jpg" alt="insta-post"  style="width:100%">
+    <img src="insta4.jpg" alt="insta-post" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="insta5.jpg" alt="insta-post"  style="width:100%">
+    <img src="insta6.jpg" alt="insta-post"  style="width:100%">
+</div>
+<div class="column">
+    <img src="insta7.jpg" alt="insta-post"  style="width:100%">
+    <img src="th.jpg" alt="insta-post"  style="width:100%">
+</div>
+</div>
+</div>
+<br>
+<div class="w3-container  w3-center w3-padding-32" >
+    <h1 style="color: #303030;">Subscribe</h1>
+    <p style="color: #303030;">To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-green w3-margin-bottom">Subscribe</button>
+  </div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid " style="background-color:white;">
+  <h2 class="text-center">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center" style="background-color:lightcyan">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Enjoy your Adventure.And always....follow the magic!</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
+
+<div id="about">
+ <div class="content">
+ <div class="hero-image text-center">
+<header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:500px" id="home">
+ <div class="headimage">
+  <img class="w3-image" src="bed.jpg" alt="Hamburger Catering" width="1600" height="700">
+</div>
+  <div class="bottomright">
+    <h1 style="font-family: 'Pacifico';">Stay In Wonderland For A While</h1>
+  </div>
+</header>
+</div>
